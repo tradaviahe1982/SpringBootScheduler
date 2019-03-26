@@ -1,33 +1,17 @@
 # Spring Boot Task Scheduling Example
 
-Learn how to schedule tasks with Spring Boot -
+Đây là một ví dụ khá hay về lập lịch tự động cho các tác vụ. Trước đây việc lập lịch 
+luôn luôn viết dưới dạng Background bởi Windows Service. Ngày nay dưới sự hỗ trợ của
+Spring Framework nó trở nên dễ dàng hơn rất nhiều.
 
-https://www.callicoder.com/spring-boot-task-scheduling-with-scheduled-annotation/
-
-## Requirements
+## Yêu cầu thư viện
 
 1. Java - 1.8.x
 
 2. Maven - 3.x.x
 
-## Steps to setup
+## Đặt lịch theo biểu thức Cron Expression
 
-**1. Clone the application**
+Ví dụ vào mọi ngày lúc 0h sáng năm 2019
 
-```bash
-git clone https://github.com/callicoder/spring-boot-scheduler-example.git
-```
-
-**2. Build and run the app using maven**
-
-```bash
-cd spring-boot-scheduler-example
-mvn package
-java -jar target/scheduler-demo-0.0.1-SNAPSHOT.jar
-```
-
-You can also run the app without packaging it using -
-
-```bash
-mvn spring-boot:run
-```
+0 0 12 * * ? 2019
